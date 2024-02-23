@@ -4,8 +4,9 @@ Exercise 1.1
 3.  Install VS Code (if haven't already)
 4.  Create a Python script named "add.py" that adds two numbers. 
     - Use the input() function to get user input and the print() function to display the result.
-5.  Activate the virtual environment with the following code and install pip: source cf-python-base/bin/activate
-                                                                              pip install ipython
+5.  Activate the virtual environment with the following code and install pip: 
+            C:\Users\duda2\Documents\GitHub>.\cf-python-base\Scripts\activate
+            pip install ipython
 6.  Export a requirements file with the following command: pip freeze > requirements.txt
 7.  Create a new environment named "cf-python-copy" and install packages from "requirements.txt" with:
           python -m venv cf-python-copy
