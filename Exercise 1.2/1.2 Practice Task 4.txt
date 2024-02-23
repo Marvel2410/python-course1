@@ -1,0 +1,34 @@
+>>> str1 = 'hello, '
+>>> str2 = 'how are you?'
+>>> str3 = str1 + str2
+
+hello, how are you?
+
+0 = h
+1 = e
+2 = l
+3 = l
+4 = o
+5 = ,
+6 = space
+7 = h
+8 = o
+9 = w
+10 = space
+11 = a
+12 = r
+13 = e 
+14 = space
+15 = y 
+16 = o 
+17 = u 
+18 = ?
+
+
+str3[3:] - 'lo, how are you?' (start with zero count to 3, continue to the end)
+str3[-3:] - 'you?'   (-3 count from end, : means continue to the end)
+str3[2:9:3] - 'l,o' (start at 2, go through 9, but only every 3rd index)
+str3[::-2] '?o r o olh' (-2 start count at end of string, every 2nd index)
+str3[2:8] - llo, h (start at 2nd index, go to 8th index, do not count last index, so stop at 7)
+
+

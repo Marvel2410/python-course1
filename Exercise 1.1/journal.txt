@@ -1,0 +1,75 @@
+Reflection
+1.	What experiences have you had with coding and/or programming so far? What other experiences 
+(programming-related or not) have you had that may help you as you progress through this course?  
+
+Aside from this bootcamp and a couple random free tutorials I’ve done online over the last couple years, 
+I had no expereience with coding and/or programming.  I grew up in the era of Myspace and remember really
+enjoying the basic HTML that went along with it.  I suppose that curiosity never left me. 
+
+2.	What do you know about Python already? What do you want to know?
+
+Going into this, I really didn't know anything about Python.  I know that it is a very popular langauge 
+at the moment, and everyone I spoke to prior to enrolling in my full-stack immersion told me to learn
+Python.  I was very excited to see it offered as a specialization at the end of the course. 
+
+3.	What challenges do you think may come up while you take this course? What will help you 
+face them? Think of specific spaces, people, and times of day of week that might be favorable
+ to your facing challenges and growing. Plan for how to solve challenges that arise. 
+
+ So far, what i've expereienced are levels of confusion and frustration that I've never felt before.  I have
+ a tendency to go really hard on myself and get frustrated when I don't understand something right away.
+ I am constantly having to remind myself how difficult all of this is and that its okay to not understand it 
+ right away.  I have a difficult time asking for help, so forcing myself to do so has also been a challenge.
+ So far, what has helped me is allowing myself time to step a way from frustrating point.  It is not uncommon
+ for me to get lost in something for 6-7 straight hours and force myself to continue until its done.  through
+ this course, I've learned taking a couple hours or even a whole day breather can offer fresh insight and it
+ usually helps me see what my issue was, etc. I tend to focus better later in the day, so I've been trying to
+ plan my learning around that as well.
+
+Exercise 1.1
+ 1.	In your own words, what is the difference between frontend and backend web development? If you 
+ were hired to work on backend programming for a web application, what kinds of operations would 
+ you be working on?
+
+ -Front end web development involves creating the part of a website/application that the users see and/or
+ interact with daily.  This includes features such as the layout and overall design.
+ -Back end web development is all of the "behind the scenes" operations.  
+ -If I were hired to work on backend programming I would be working on things like managing/maintaining
+  a database, implementing security features for user authentication and/or user data, and overall just
+  making sure that the application runs smoothly
+
+
+2.	Imagine you’re working as a full-stack developer in the near future. Your team is asking for your 
+advice on whether to use JavaScript or Python for a project, and you think Python would be the better 
+choice. How would you explain the similarities and differences between the two languages to your team? 
+Drawing from what you learned in this Exercise, what reasons would you give to convince your team that 
+Python is the better option? 
+(Hint: refer to the Exercise section “The Benefits of Developing with Python”)
+
+*Similarities*
+- Both are dynamically typed - meaning the variable type does not have to be declared prior to using it
+- Both high level/advanced and highly popular
+- Both have extensive libraries and frameworks to help make development easier
+
+*Differences*
+- JavaScript is primiarily used for frontend development, while Python is more used for backend
+- Python has a simpler syntax compared to JavaScript, making it easier for developers to read and organize
+
+Overall, Python is the better option due to its readable, and easy to understand syntax.  I would also
+recommend it due to its vast built in packages to help simplify complex tasks.  (ex/ like the math module).
+
+3.	Now that you’ve had an introduction to Python, write down 3 goals you have for yourself and your 
+learning during this Achievement. You can reflect on the following questions if it helps you. What 
+do you want to learn about Python? What do you want to get out of this Achievement? Where or what 
+do you see yourself working on after you complete this Achievement?
+
+GOALS:
+- Learn the basics:  Start by understanding the basic syntax and concepts of Python.  I also want to practice
+writing simple programs to get a feel for how Python works.
+- Explore Python Libraries: I want to explore the Python libraries and frameworks that are commonly used,
+such as Flask or Django.  See what those libraries do in a real-world project.
+- Build/Complete a project:  Apply what I've learned and create a side Python project of my own.  (After
+completing )
+
+
+

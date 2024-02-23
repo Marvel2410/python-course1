@@ -1,0 +1,34 @@
+1000
+0.145
+3
+
+
+Terminal Responses:
+(cf-python-base) C:\Users\duda2\Documents\GitHub\python-course1>ipython
+Python 3.8.7 (tags/v3.8.7:6503f05, Dec 21 2020, 17:59:51) [MSC v.1928 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.12.3 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: f = open('codepractice1.txt', 'r')
+   ...: lines = f.readlines()
+   ...: [principal, rate, time_period] = [x.strip('\n') for x in lines]
+   ...: f.close()
+
+In [2]: principal
+Out[2]: '1000'
+
+In [3]: type(principal)
+Out[3]: str
+
+In [4]: principal = float(principal)
+   ...: rate = float(rate)
+   ...: time_period = float(time_period)
+
+In [5]: compounded_principal = principal * (1 + rate) ** time_period
+
+In [6]: print(type(principal))
+   ...: print(type(rate))
+   ...: print(type(time_period))
+<class 'float'>
+<class 'float'>
+<class 'float'>
