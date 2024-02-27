@@ -1,0 +1,31 @@
+2.	Imagine you’re at a job interview for a Python developer role. The interviewer says 
+“Explain logical operators in Python”. Draft how you would respond.
+
+Logical operators are used to combine conditions in expressions.  They basically allow you to perform
+different actions based on whether certain conditions are true or false (boolean).  For example, the 'and'
+operator returns True if both conditions are true.  Similarly, 'or' checks if at least one of the condtions is true.
+
+
+3.	What are functions in Python? When and why are they useful?
+
+Functions in Python are blocks of code that perform specific tasks.  They help in organizing code and making it
+reusable, so instead of writing the same code multiple times, you can define a function once and call it whenever
+you need that functionality.  
+
+
+4.	In the section for Exercise 1 in this Learning Journal, you were asked in question 
+3 to set some goals for yourself while you complete this course.  In preparation for your 
+next mentor call, make some notes on how you’ve progressed towards your goals so far.
+
+As far as goals, I feel I have definitely taken on the first one.  I am learning the basics, and also understanding them 
+fairly quickly. I am really enjoying playing within the practice exercises and tasks.  I feel more confident in Python thus 
+far and I am looking forward to the rest of the achievement.  I really learned the importance of indentation during this lesson.
+
+
+GOALS:(from Journal 1.1)
+- Learn the basics:  Start by understanding the basic syntax and concepts of Python.  I also want to practice
+writing simple programs to get a feel for how Python works.
+- Explore Python Libraries: I want to explore the Python libraries and frameworks that are commonly used,
+such as Flask or Django.  See what those libraries do in a real-world project.
+- Build/Complete a project:  Apply what I've learned and create a side Python project of my own.  (After
+completing )
