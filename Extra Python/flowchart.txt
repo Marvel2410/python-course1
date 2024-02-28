@@ -1,0 +1,13 @@
+                                                       START
+                                                         |
+                               FOREST                                         RIVERBANK
+                                  |                                               | 
+                     OLD MAN W/SWORD, ACCEPT?                                    BOAT
+                   |                         |                                   / \
+                  YES                       NO                                 YES   NO
+                   |                         |                                  |    |
+                  CAVE                    DUNGEON                          DUNGEON   CAVE W/TREASURE, OPEN TRESURE?
+                 /    \                    /   \                           /    \              /          \
+              YES    NO                  YES   NO                        YES    NO           YES          NO
+              |       |                    |     |                        |      |            |            |
+      MASTER SWORD    FAIRY           TRIFORCE   NEW MERCH       NEW POWERS   FAIRY     NEW POWERS     NEW MERCH
