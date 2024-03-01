@@ -1,0 +1,32 @@
+ 
+1.	In your own words, what is object-oriented programming? What are the benefits of OOP?
+
+Object oriented programming is a way of writing code that focuses on creating objects that have both
+data and methods/actions.  With OOP, you can avoid repeating the same code over and over again, which
+makes your programs more efficient.  Overall, OOP is a useful way to write code, especially for bigger projects
+because it helps keeps things organized and saves you time.
+
+2.	What are objects and classes in Python? Come up with a real-world example to illustrate how objects and classes work.
+
+In Python, classes are like blueprints that define the attributes and behaviors of objects.  Objects are created from these
+classes, reflecting specific characteristcs and actions that are defined by the class.  For example, consider an Animal, which defines
+attributes like species and color, and methods like eating and sleeping.  An object of the animal class could be a specific animal,
+such as a black cat, which has its own species (cat) and color (black) and can perform actions like eating and sleeping.  Each object
+created from the animal class is unique, but they all share common behaviors defined in the class.
+
+
+3.	In your own words, write brief explanations of the following OOP concepts; 100 to 200 words per method is fine. 
+
+Inheritance in object oriented programming is a concept where a new class can inherit attributes and methods from an existing
+class.  This allows for the reuse of code and helps create an order of classes.  For example, you could have a vehicle class with
+attributes like color and methods like start_engine.  Then, you could create a subclass like Car and Truck that inherit from Vehicle,
+and then gaining access to its attributes and methods.
+
+Polymorphism is the concept in OOP where different classes can be treated as instances of the same class through a shared interface. 
+This flexibility simplifies coding by allowing different classes to be used interchngably.  For example, consider a class animal with a method sound.
+Subclasses like Cat and Dog can implement this method differently, allowing them to make their individual sounds, but both can used in the same context 
+whereever an animal is expected. 
+
+Operator overloading enables operators like + and - to be used with objects in a meaningful way by defining special methods in a class.
+When the corresponding operator is used with instances of that class, these methods are called to peform the operation.  For example, you could
+overload the + operator to add two money objects together, combining their values to get a new money object from the sum.
