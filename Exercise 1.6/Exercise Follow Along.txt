@@ -1,0 +1,95 @@
+C:\Users\duda2>ipython
+Python 3.8.7 (tags/v3.8.7:6503f05, Dec 21 2020, 17:59:51) [MSC v.1928 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.12.3 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import mysql.connector
+
+In [2]: conn = mysql.connector.connect(
+   ...:     host='localhost',
+   ...:     user='cf-python',
+   ...:     passwd='password')
+
+In [3]: cursor = conn.cursor()
+
+In [4]: cursor.execute("CREATE DATABASE my_database")
+
+In [5]: cursor.execute("USE my_database")
+
+In [6]: cursor.execute('''CREATE TABLE inventory(
+   ...:     item_id             INT,
+   ...:     item_name           VARCHAR(50),
+   ...:     price               FLOAT,
+   ...:     qty                 INT
+   ...: )''')
+
+In [7]: cursor.execute("ALTER TABLE inventory RENAME TO stock")
+
+In [8]: cursor.execute("ALTER TABLE stock RENAME COLUMN qty TO quantity")
+
+In [9]: cursor.execute("ALTER TABLE stock ADD COLUMN manufacturer_name TEXT")
+
+In [10]: cursor.execute("DESCRIBE Stock")
+
+In [11]: result = cursor.fetchall()
+    ...: for row in result:
+    ...:     print(row)
+    ...:
+('item_id', 'int', 'YES', '', None, '')
+('item_name', 'varchar(50)', 'YES', '', None, '')
+('price', 'float', 'YES', '', None, '')
+('quantity', 'int', 'YES', '', None, '')
+('manufacturer_name', 'text', 'YES', '', None, '')
+
+In [12]: for row in result:
+    ...:     print(row[0])
+    ...:
+item_id
+item_name
+price
+quantity
+manufacturer_name
+
+In [13]: cursor.execute("ALTER TABLE stock ADD COLUMN dummy_column INT")
+
+In [14]: cursor.execute("ALTER TABLE stock DROP COLUMN dummy_column")
+
+In [15]: cursor.execute('''CREATE TABLE addresses(
+    ...:     address_line_1 TEXT,
+    ...:     address_line_2 TEXT,
+    ...:     city TEXT,
+    ...:     state TEXT,
+    ...:     country TEXT,
+    ...:     zip_code TEXT)
+    ...: ''')
+
+In [16]: cursor.execute("DESCRIBE addresses")
+    ...: print("Table structure:")
+    ...: for row in cursor.fetchall():
+    ...:     print(row)
+    ...:
+    ...: cursor.execute("SELECT * FROM addresses")
+    ...: print("\nTable contents:")
+    ...: for row in cursor.fetchall():
+    ...:     print(row)
+    ...:
+Table structure:
+('address_line_1', 'text', 'YES', '', None, '')
+('address_line_2', 'text', 'YES', '', None, '')
+('city', 'text', 'YES', '', None, '')
+('state', 'text', 'YES', '', None, '')
+('country', 'text', 'YES', '', None, '')
+('zip_code', 'text', 'YES', '', None, '')
+
+Table contents:
+
+In [17]: cursor.execute("DROP TABLE addresses")
+
+In [18]: cursor.execute('''INSERT INTO stock
+    ...:     (item_name, item_id, manufacturer_name, price, quantity)
+    ...:     VALUES ('Water', 1, 'Aquafina', 10, 20)
+    ...:     ''')
+
+In [19]: cursor.execute("ALTER TABLE stock MODIFY COLUMN item_id INT PRIMARY KEY AUTO_INCREMENT;")
+
+In [20]: cursor.execute("INSERT INTO stock (item_name, manufacturer_name, price, quantity) VALUES ('Bread', 'Kingsmill', '15', '30');")
