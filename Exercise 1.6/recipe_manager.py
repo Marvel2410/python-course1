@@ -41,6 +41,7 @@ def main_menu(conn, cursor):
         print("\t3. Update an existing recipe")
         print("\t4. Delete a recipe")
         print("\t5. View all recipes")
+        print("\t6. View a single recipe by ID or Name")
         print("\tType 'quit' to exit the program")
         choice = input("Your Choice: ")
 
@@ -55,6 +56,8 @@ def main_menu(conn, cursor):
                 delete_recipe(conn, cursor)
             elif choice == '5':
                 view_all_recipes(conn, cursor)
+            elif choice == '6':
+                view_recipe_by_id(conn, cursor)
             elif choice.lower() == 'quit': #checks if user input is 'quit' and then ends program
                 break
             else:  #if not quit, asks for a valid selection
@@ -217,7 +220,31 @@ def view_all_recipes(conn, cursor):
         print(f"Difficulty: {difficulty}")
         print("------------------------------------")
 
+#additional option to view single recipe by id/name
+def view_recipe_by_id(conn, cursor):
+    # Fetch all recipes and list them to the user
+    cursor.execute("SELECT id, name FROM Recipes")
+    results = cursor.fetchall()
+    print("\nAll recipes:")
+    print("ID\tName")
+    print("--------------------")
+    for row in results:
+        print(f"{row[0]}\t{row[1]}")
 
+    # Ask user for recipe ID to view
+    recipe_id = input("\nEnter the ID of the recipe you want to view: ")
+    query = "SELECT * FROM Recipes WHERE id = %s"
+    cursor.execute(query, (recipe_id,))
+    result = cursor.fetchone()
+    if result:
+        print("\nRecipe Details:")
+        print(f"ID: {result[0]}")
+        print(f"Name: {result[1]}")
+        print(f"Ingredients: {result[2]}")
+        print(f"Cooking Time: {result[3]} minutes")
+        print(f"Difficulty: {result[4]}")
+    else:
+        print("Recipe not found.")
 
 #Call the main_menu function
 main_menu(conn, cursor)
