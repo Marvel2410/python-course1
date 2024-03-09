@@ -1,0 +1,34 @@
+1.	What are databases and what are the advantages of using them?
+
+Databases are like organized collections of information that computers can easily access and manage. They're useful because they 
+can store large amounts of data in a structured way, making it easier to search for and retrieve specific information.
+
+
+2.	List 3 data types that can be used in MySQL and describe them briefly:
+
+In MySQL, there are different types of data that can be stored. Three examples are:
+
+VARCHAR: This is used for storing text or strings of characters. It can hold variable-length strings, like names or descriptions.
+INT: This is used for storing whole numbers. It's good for things like quantities or counts.
+DATE: This is used for storing dates. It can hold dates like birthdays or event dates.
+
+
+3.	 In what situations would SQLite be a better choice than MySQL?
+
+SQLite is better than MySQL in situations where you want something simple and easy to use. SQLite doesn't need a separate server to run, 
+so it's great for small projects or when you don't need to handle a lot of users at once.
+
+
+4.	Think back to what you learned in the Immersion course. What do you think about the differences between 
+    JavaScript and Python as programming languages?
+
+JavaScript is like the language of the web. It's used to make websites interactive and do cool things like animations. Python is more 
+like a friendly language that's easy to read and write. It's often used for things like analyzing data or making web servers.
+
+
+5.	Now that you’re nearly at the end of Achievement 1, consider what you know about Python so far. 
+    What would you say are the limitations of Python as a programming language?
+
+One thing is that it can be slower than some other languages when it comes to doing really complicated calculations or handling lots of data. 
+Also, while Python has a lot of libraries and tools, it might not have as many specialized tools for certain things compared to some other languages.
+Lastly, Python has something called the Global Interpreter Lock, which can make it harder to use multiple processors at the same time for certain tasks.
