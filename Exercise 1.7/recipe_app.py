@@ -3,9 +3,13 @@ from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
+#Extra borders/animations fun
+import os
+import time
+
 #Set up SQLAlchemy
-username = "root"
-password = "OliverGusGusBKovu24!"
+username = "cf-python"
+password = "password"
 hostname = "localhost"
 database_name = "task_database"
 
@@ -62,8 +66,30 @@ class Recipe(Base):
 Base.metadata.create_all(engine)
 
 
+# Function to display a border
+def display_border(length):
+    print("+" + "-"*length + "+")
+
+# Function to display a menu option with a border
+def display_menu_option(number, option, length):
+    print(f"| {number}. {option.ljust(length-5)} |")
+
+# Function to animate text
+def animate_text(text):
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(0.05)
+    print()
+
+
+
+
+
 #Function to create a new recipe entry
 def create_recipe():
+    display_border()
+    print("|       Create a new recipe       |")
+    display_border()
     # Collect recipe details
     name = input("\nEnter the name of the recipe: ")
     ingredients = input("Enter ingredients (separated by commas): ").split(", ")
@@ -99,14 +125,11 @@ def create_recipe():
 def view_all_recipes():
     recipes = session.query(Recipe).all()
 
-    #Check if there are any recipes in database
     if not recipes:
         print("No recipes found.")
-        return
-
-    #Display all recipes
-    for recipe in recipes:
-        print(recipe)
+    else:
+        for recipe in recipes:
+            print(recipe)
 
 #Check if there are any recipes in the database
 def search_by_ingredients():
@@ -222,14 +245,24 @@ def delete_recipe():
 
 #Creating the main menu
 def main_menu():
+    options = [
+        "Create a new recipe",
+        "View all recipes",
+        "Search for recipes by ingredients",
+        "Edit a recipe",
+        "Delete a recipe",
+        "Quit"
+    ]
+    max_length = max(len(option) for option in options) + 6  # Add 6 for padding and numbering
+
     while True:
-        print("\nMain Menu:")
-        print("1. Create a new recipe")
-        print("2. View all recipes")
-        print("3. Search for recipes by ingredients")
-        print("4. Edit a recipe")
-        print("5. Delete a recipe")
-        print("6. Quit")
+        display_border(max_length)
+        print("|              Recipe App               |")
+        display_border(max_length)
+        print("| Main Menu:                            |")
+        for i, option in enumerate(options, 1):
+            display_menu_option(i, option, max_length)
+        display_border(max_length)
 
         choice = input("Enter your choice (1-6): ")
 
@@ -254,4 +287,3 @@ def main_menu():
 # Run the main menu
 if __name__ == "__main__":
     main_menu()
-  
