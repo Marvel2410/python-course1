@@ -1,0 +1,31 @@
+1.	Suppose you’re a web developer in a company and need to decide if you’ll use vanilla (plain) Python for a project, or a 
+framework like Django instead. What are the advantages and drawbacks of each?
+
+Vanilla Python is straightforward and easy to learn, especially for beginners.  The developer has complete control over the code and
+can customize it exactly how you want without relying on any preset structures.  Some drawbacks are that you need to build everything
+from scratch, including routing, database connections, and security, which can take longer to complete if doing from the ground up.  Also,
+as your project grows, it will get increasingly more difficult to maintain and update.  Django provies pre-built components that speed up 
+development so you do not have to start from scrath.  It also follows the DRY principles, which promotes code reusability and maintainability.
+Some drawbacks are Django's learning curv that has its own conventions and terminology which might be overwhelming for a beginner.  You also
+have to adhere to Django's struture which may limit yoru flexibility.
+
+2.	In your own words, what is the most significant advantage of Model View Template (MVT) 
+architecture over Model View Controller (MVC) architecture?
+
+MVT simplifies web development by handling the controller part for the developer.  So essentially, you dont need to write as much code
+compared to MVC.  MVT provides pre-made templates for displaying data.  MVC can be more complex in the sense that you have to split your
+code into three separate parts (Model, View, and Controller), as your project grows it will be harder to maintain accros all three.  MVC 
+conventions and terminlogy take longer to learn and comprehend than MVT.  Overall, MVT simplifies development with ready made tools.
+
+
+3.	Now that you’ve had an introduction to the Django framework, write down three goals you have for yourself and your 
+learning process during this Achievement. You can reflect on the following questions if it helps:
+●	What do you want to learn about Django? 
+I want to learn the basics, to understand the fundemental concepts like models, views, and templates.  
+●	What do you want to get out of this Achievement? 
+I want to be able to confidently build a small web application using Django so it an give me hands on practice for my learning/education.
+●	Where or what do you see yourself working on after you complete this Achievement?
+Gain confidence and explore some advanced features of Django.  I plan on applying for jobs withn the web dev field very soon, and the more
+well rounded I am in my skill set, the better my chances are.  Python and Django are highly sought after at the moment, so I hope to learn and 
+carry my new skills into the work force.
+
