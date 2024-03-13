@@ -87,9 +87,10 @@ def animate_text(text):
 
 #Function to create a new recipe entry
 def create_recipe():
-    display_border()
-    print("|       Create a new recipe       |")
-    display_border()
+    length = 40  # Set the length of the border
+    display_border(length)
+    print("|           Create a new recipe         |")
+    display_border(length)
     # Collect recipe details
     name = input("\nEnter the name of the recipe: ")
     ingredients = input("Enter ingredients (separated by commas): ").split(", ")
