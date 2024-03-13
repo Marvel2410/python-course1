@@ -1,0 +1,29 @@
+1.	What is an Object Relational Mapper and what are the advantages of using one?
+
+An Object Relational Mapper (ORM) is a tool that helps developers work with databases in their code more easily. 
+Instead of writing complex SQL queries to interact with a database, an ORM allows developers to use programming language 
+objects to represent database tables and rows.  Some of the advantages of using ORM, is simplicity in the sense that it allows
+devleopers to use familiar prgramming language syntax to interact with databases.  It can also make code more maintainable by
+providing clear separation between database and application.
+
+2.	By this point, you’ve finished creating your Recipe app. How did it go? What’s something in the app that you did well with? 
+If you were to start over, what’s something about your app that you would change or improve?
+
+Overall, I enjoyed the recpie app. If i were to start over, I would consider expanding on the menu options as well as improving
+the user interface and overall user experience.  For example, enhancing the design to make it more visually appealing and intuititve
+for users to navigate.
+
+3. Imagine you’re at a job interview. You’re asked what experience you have creating an app using Python. Taking your work for this 
+Achievement as an example, draft how you would respond to this question.
+
+I would highlight my work on the recipe app by explaining that I used Python along with SQLAlchemy to build a recipe management system.
+I woudl also mention that i created a database schema, defined models for recipes, and implemented features/options such as adding new recipes, 
+searching through ingredients, editing, and deleting recipes.  Overall, thsi project allwoed me to apply Python programming concepts in a
+real world scenario using Python.
+
+4.	You’ve finished Achievement 1! Before moving on to Achievement 2, take a moment to reflect on your learning in the course so far: 
+a.	What went well during this Achievement? I was happy with how quickly I was able to pick up the basic concepts of python and create an app where all the functions worked
+b.	What’s something you’re proud of?  Doing a little bit of extra with my assignments in terms of formatting, as well as my choose your own adventure game. 
+c.	What was the most challenging aspect of this Achievement? Understanding and implementing SQLAlchemy and expanding on certain concepts that didn't come as easy.
+d.	Did this Achievement meet your expectations? Did it give you the confidence to start working with your new Python skills?  I do feel like this was a very good introduction to Python and i look forward to the next achievement
+e.	What’s something you want to keep in mind to help you do your best in Achievement 2?  Spend more time planning and organizing before I jump into an exercise or task.
