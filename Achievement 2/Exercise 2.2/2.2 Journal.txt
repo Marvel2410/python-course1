@@ -1,0 +1,33 @@
+1.	Suppose you’re in an interview. The interviewer gives you their company’s website as an example, asking you to convert 
+the website and its different parts into Django terms. How would you proceed? For this question, you can think about your 
+dream company and look at their website for reference. 
+(Hint: In the Exercise, you saw the example of the CareerFoundry website in the Project and Apps section.)
+
+I chose the company CD Projekt Red because I love their games.  The CD Projekt Red website can be considered a Django project
+becasue it woudl contain multiple apps, each serving a specific funtion to the website
+  - Main Website App:  Handle the main pages of the websites, such as the home page, about page, and contact page. 
+  - Games App: Since they develop games, there is a games app that showcases their latest releases with pages for each
+  game providing details and trailers
+  - Join Us App: Would handle job listings, job application forms, and the submission process for job applications
+
+
+2.	In your own words, describe the steps you would take to deploy a basic Django application locally on your system. 
+  - Create a virtual network
+  - Install Python and Django on your system
+  - Create a new Django project using django-admin.exe startproject project_name
+  - Rename the project file to elimnate confusion with the sub folder with same name using command: rename project_name src
+  - Use the following commands within the src folder and run locally on http://127.0.0.1:8000/ to make sure everthing works: py manage.py migrate,   py manage.py runserver
+  - Then create a admin user using the command: python manage.py createsuperuser
+    - Input a username, email, and password, run the server again and test to make sure the authorization went through.
+    - Run server and then change the local site to http://127.0.0.1:8000/admin 
+    - Test credentials to make sure it works
+
+
+3.	Do some research about the Django admin site and write down how you’d use it during your web application development.
+
+The Django admin site is a built-in feature that provides a web-based interface for managing your site's data. To use the 
+Django admin site during web application development, you would first need to create Django models to represent your data. 
+Then, you would register these models with the admin site using the admin.py file in your app. This allows you to add, edit, 
+and delete instances of your models directly from the admin site, without writing any additional code. The admin site can be 
+customized to suit your needs, such as adding custom views or filters for your models.
+
