@@ -1,0 +1,17 @@
+1.	Do some research on Django models. In your own words, write down how Django models work and what their benefits are.
+
+Ddjango models are like blueprints for your database. They help you define the structure of your data, like what kind of 
+information each part of your app will store. For example, if you're making a recipe app, you'd have a model for recipes 
+that might include fields like name, ingredients, and cooking instructions. The benefits of Django models are that they make 
+it easier to work with your data in your code, help you avoid mistakes, and make your app more organized.
+
+
+2.	In your own words, explain why it is crucial to write test cases from the beginning of a project. 
+You can take an example project to explain your answer.
+
+It's crucial to write test cases from the beginning of a project because they help you catch mistakes and bugs early 
+on. An example woudl be building a recipe app, and you forget to add a field for ingredients in your recipe model. 
+If you had written a test case for that model, it would have failed, alerting you to the problem before it caused 
+any issues in your app. Tests also help you understand how different parts of your app should work together, making 
+it easier to add new features or make changes later on.
+
